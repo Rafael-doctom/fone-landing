@@ -4,3 +4,48 @@
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    box-shadow: 2px 3px 3px rgba(172, 159, 159, 0.651);
+}
+
+nav .list{
+    display: flex;
+    list-style: none;
+}
+
+nav .list li{
+    margin: 0 1rem;
+}
+
+.itemOption{
+    display: flex;
+    align-items: center;
+}
+
+.modal{
+    display: flex;
+    align-items: center;
+}
+
+#searchIcon, #cardIcon, #menuIcon{
+    cursor: pointer;
+    fill: rgb(39, 39, 39);
+}
+
+.itemOption #input{
+    width: 20vw;
+    background-color: rgba(124, 124, 124, 0.075);
+    border: 1px solid rgba(104, 103, 103, 0.267); 
+    border-radius: 5px;
+    padding: 0.4em;
+    display: none;
+}
+
+.itemOption #input:focus{
+    outline: none;
+}

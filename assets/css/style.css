@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+:root{
+    --red: #ca3b3a;
+    --black: #161616;
+    --gray: #707070;
+}
+
+/* header */
 nav{
     display: flex;
     justify-content: space-around;
@@ -48,4 +55,102 @@ nav .list li{
 
 .itemOption #input:focus{
     outline: none;
+}
+
+/* main */
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.describe-product{
+    width: 25vw;
+}
+
+.product-title{
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+
+.describe{
+    color: var(--black);
+    font-weight: 600;
+}
+
+.stars{
+    display: flex;
+    align-items: center;
+}
+
+.stars svg{
+    fill: var(--red);
+}
+
+.stars span{
+    margin-left: 1rem;
+    color: var(--red);
+}
+
+.benefits{
+    margin-top: 0.45rem;
+}
+
+.benefits h6{
+    color: var(--black);
+    font-weight: 800;
+    font-size: 0.85rem;
+    margin-top: 0.35rem;
+}
+
+.benefits p{
+    color: var(--gray);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.product-cart{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.product-cart button{
+    background-color: var(--red);
+    width: 10vw;
+    height: 5vh;
+    color: white;
+    font-weight: 700;
+    border: 0;
+    border-radius: 3px;
+    margin: 0 3rem;
+    cursor: pointer;
+}
+
+/* footer */
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 0, 0.514);
+    min-height: 10vh;
+    margin: 0 0;
+}
+
+.additional{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.additional p{
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    width: 16vw;
+    align-items: center;
+}
+
+.additional svg{
+    margin-right: 1rem;
 }

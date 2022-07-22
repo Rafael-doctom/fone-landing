@@ -1,18 +1,18 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --red: #ca3b3a;
     --black: #161616;
     --gray: #707070;
 }
 
 /* header */
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -20,103 +20,105 @@ nav{
     box-shadow: 2px 3px 3px rgba(172, 159, 159, 0.651);
 }
 
-nav .list{
+nav .list {
     display: flex;
     list-style: none;
 }
 
-nav .list li{
+nav .list li {
     margin: 0 1rem;
 }
 
-.itemOption{
+.itemOption {
     display: flex;
     align-items: center;
 }
 
-.modal{
+.modal {
     display: flex;
     align-items: center;
 }
 
-#searchIcon, #cardIcon, #menuIcon{
+#searchIcon,
+#cardIcon,
+#menuIcon {
     cursor: pointer;
     fill: rgb(39, 39, 39);
 }
 
-.itemOption #input{
+.itemOption #input {
     width: 20vw;
     background-color: rgba(124, 124, 124, 0.075);
-    border: 1px solid rgba(104, 103, 103, 0.267); 
+    border: 1px solid rgba(104, 103, 103, 0.267);
     border-radius: 5px;
     padding: 0.4em;
     display: none;
 }
 
-.itemOption #input:focus{
+.itemOption #input:focus {
     outline: none;
 }
 
 /* main */
-.content{
+.content {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 80vh;
 }
 
-.describe-product{
+.describe-product {
     width: 25vw;
 }
 
-.product-title{
+.product-title {
     color: var(--red);
     margin-bottom: 1rem;
 }
 
-.describe{
+.describe {
     color: var(--black);
     font-weight: 600;
 }
 
-.stars{
+.stars {
     display: flex;
     align-items: center;
 }
 
-.stars svg{
+.stars svg {
     fill: var(--red);
 }
 
-.stars span{
+.stars span {
     margin-left: 1rem;
     color: var(--red);
 }
 
-.benefits{
+.benefits {
     margin-top: 0.45rem;
 }
 
-.benefits h6{
+.benefits h6 {
     color: var(--black);
     font-weight: 800;
     font-size: 0.85rem;
     margin-top: 0.35rem;
 }
 
-.benefits p{
+.benefits p {
     color: var(--gray);
     font-weight: 600;
     font-size: 0.85rem;
 }
 
-.product-cart{
+.product-cart {
     display: flex;
     align-items: center;
     margin-top: 1rem;
 }
 
-.product-cart button{
+.product-cart button {
     background-color: var(--red);
     width: 10vw;
     height: 5vh;
@@ -129,7 +131,7 @@ nav .list li{
 }
 
 /* footer */
-.footer-content{
+.footer-content {
     display: flex;
     justify-content: space-around;
     background-color: rgba(255, 255, 0, 0.514);
@@ -137,13 +139,13 @@ nav .list li{
     margin: 0 0;
 }
 
-.additional{
+.additional {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.additional p{
+.additional p {
     font-size: 1rem;
     font-weight: 500;
     display: flex;
@@ -151,6 +153,94 @@ nav .list li{
     align-items: center;
 }
 
-.additional svg{
+.additional svg {
     margin-right: 1rem;
+}
+
+
+@media (max-width:1024px){
+    .footer-content{
+        padding: 1rem 0;
+    }
+
+    .additional p {
+        width: 20vw;
+    }
+}
+
+@media (max-width:768px){
+    nav {
+        height: 13vh;
+    }
+    
+    .content {
+        margin: 1rem 0;
+        flex-direction: column;
+    }
+
+    .describe-product {
+        margin: 1rem 0;
+        width: 90vw;
+    }
+
+    .product-cart button {
+        width: 18vw;
+        height: 7vh;
+    }
+    
+    .additional p {
+        width: 30vw;
+    }
+}
+
+
+@media (max-width:425px){
+    nav {
+        justify-content: space-between;
+        padding: 0 0.44rem;
+    }
+    
+    nav .list {
+        display:none;
+    }
+
+    .itemOption #input {
+        width: 40vw;
+        height: 6vh;
+    }
+    
+    .content {
+        margin: 1rem 0;
+        flex-direction: column;
+    }
+
+    .content img{
+        width: 380px;
+        height: 420px;
+    }
+
+    .product-cart button {
+        width: 30vw;
+        height: 7vh;
+    }
+
+    .footer-content {
+        justify-content: left;
+    }
+    
+    .additional {
+        flex-direction: column;
+        margin: 0 1rem;
+    }
+
+    .additional svg {
+        display: block;
+        width: 5vw;
+    }
+
+    .additional p {
+        width:85vw;
+        margin: 1rem 0 ;
+    }
+   
 }

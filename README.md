@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-    <img src="https://i.imgur.com/YuUaCDv.gif" alt="Logo" width="1000">
+    <img src="https://i.imgur.com/YuUaCDv.gif" alt="Logo" width="800">
 
   <h3 align="center">Fone landing page by <a href="https://www.linkedin.com/in/emmanuel-messias-535621127/">Emmanuel Messias</a></h3>
  <br />
